@@ -1,4 +1,4 @@
-ngpus=1
+ngpus=2
 seed=0
 
 flag="--root_dir ../datasets
@@ -15,7 +15,7 @@ flag="--root_dir ../datasets
       --lr 1e-5
       --iters 200000
       --log_every 2
-      --batch_size 4
+      --batch_size 2
       --optim adamW
 
       --ml_weight 0.2      
@@ -34,7 +34,7 @@ flag="--root_dir ../datasets
 
 
 # train
-CUDA_VISIBLE_DEVICES='0'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
+CUDA_VISIBLE_DEVICES='0,1'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
 
 # eval
 #CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
