@@ -34,7 +34,7 @@ flag="--root_dir ../datasets
 
 
 # train
-CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
+CUDA_VISIBLE_DEVICES='10'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
 
 # eval
 #CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
