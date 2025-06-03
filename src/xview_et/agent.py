@@ -10,6 +10,7 @@ from tqdm import tqdm
 
 import torch
 import torch.nn as nn
+import torch.distributed as dist
 from torch import optim
 import torch.nn.functional as F
 from torch.autograd import Variable
