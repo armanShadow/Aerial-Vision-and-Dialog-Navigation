@@ -34,10 +34,10 @@ flag="--root_dir ../datasets
 
 
 # train
-# CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
+CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
 
 # eval
-CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
-      --resume_file ../datasets/AVDN/et_haa/ckpts/best_val_unseen\
-      --inference True
-      --submit True
+#CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
+#      --resume_file ../datasets/AVDN/et_haa/ckpts/best_val_unseen\
+#      --inference True
+#      --submit True
