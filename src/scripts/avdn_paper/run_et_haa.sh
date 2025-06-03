@@ -1,4 +1,4 @@
-ngpus=10
+ngpus=1
 seed=0
 
 flag="--root_dir ../datasets
@@ -15,7 +15,7 @@ flag="--root_dir ../datasets
       --lr 1e-5
       --iters 100
       --log_every 2
-      --batch_size 4
+      --batch_size 2
       --optim adamW
 
       --ml_weight 0.2      
