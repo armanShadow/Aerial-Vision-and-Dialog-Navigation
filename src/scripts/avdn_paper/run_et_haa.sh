@@ -34,7 +34,7 @@ flag="--root_dir ../datasets
 
 
 # train - proper distributed training for 2 GPUs
-CUDA_VISIBLE_DEVICES='0' python -m torch.distributed.launch --nproc_per_node=1 xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
+CUDA_VISIBLE_DEVICES='0' python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
 
 # eval
 #CUDA_VISIBLE_DEVICES='5'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
