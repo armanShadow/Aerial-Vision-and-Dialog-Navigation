@@ -37,7 +37,7 @@ flag="--root_dir ../datasets
 CUDA_VISIBLE_DEVICES='0' python xview_et/main.py --output_dir ../datasets/AVDN/et_v8 $flag 
 
 # eval
-CUDA_VISIBLE_DEVICES='0'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
-      --resume_file ../datasets/AVDN/et_haa/ckpts/best_val_unseen\
-      --inference True
-      --submit False
+#CUDA_VISIBLE_DEVICES='0'  python xview_et/main.py --output_dir ../datasets/AVDN/et_output $flag \
+#      --resume_file ../datasets/AVDN/et_haa/ckpts/best_val_unseen\
+#      --inference True
+#      --submit False
